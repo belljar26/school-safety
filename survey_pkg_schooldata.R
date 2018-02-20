@@ -18,7 +18,7 @@ grep("REPWGT50", names(school.data.nomis))
 ??surveyoptions
 jk.n.school.data <- svrepdesign(data = school.data.nomis,
                                 repweights = school.data.nomis[,21:70],
-                                type= "JKn",
+                                type= "JK1",
                                 weights= ~FINALWGT,
                                 rscales = school.rscales)
 #check design
